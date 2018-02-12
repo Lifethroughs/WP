@@ -1,0 +1,143 @@
+/* START Lifethroughs CSS */
+
+body {
+    font-family: arial;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #666;
+    background: silver;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+ul, ol {
+    padding: 10px 0 10px 10px;
+    list-style: square;
+}
+
+ul li, ol li {
+    line-height: 1.8em;
+    color: #000;
+}
+
+h1 {
+    font-size: 300px;
+    padding-bottom: 8px;
+}
+
+h2 {
+    font-size: 22px;
+    padding: 8px 0 8px 0;
+    color: #666;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 8px 0 8px 0;
+    color: #666;
+}
+
+img {
+    margin: 15px;
+}
+
+#container {
+    overflow: auto;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    border: #ccc solid 1px;
+    background: #fff;
+}
+
+header {
+    height: 70px;
+}
+
+header h1 {
+    float: left;
+    width: 400px;
+    padding: 15px 10px;
+}
+
+header #search {
+    float: right;
+    width: 310px;
+    padding-top: 14px;
+    list-style: none !important;
+}
+
+header h1 span {
+    font-size: 16px;
+    color: #306fa6;
+}
+
+nav.main {
+    overflow: auto;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    background: #333;
+}
+
+nav.main ul {
+    padding: 0;
+}
+
+nav.main ul li {
+    font-size: 15px;
+    float: left;
+    padding: 0 10px 0 10px;
+    list-style: none;
+}
+
+nav.main a {
+    color: #fff;
+}
+
+#main {
+    float: left;
+    overflow: auto;
+    width: 60%;
+}
+
+#main .post {
+    overflow: auto;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px #ccc dashed;
+}
+
+#main .post a.more-link {
+    display: block;
+    margin-top: 5px;
+    color: #074b77;
+}
+
+.meta {
+    width: 95%;
+    padding: 3px 5px;
+    background: #f4f4f4;
+}
+
+#sidebar {
+    float: right;
+    overflow: auto;
+    width: 25%;
+    padding: 10px 15px;
+    background: #f4f4f4;
+}
+
+#sidebar {
+    list-style: none !important;
+}
+
+#sidebar ul {
+    padding-left: 10px;
+}

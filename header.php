@@ -1,13 +1,15 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>
 			<?php
-				wp_title('|',true,right); //separator,display,seplocation
-				bloginfo('name');
+				wp_title('|', true, right); //separator,display,seplocation
+				bloginfo('name'); //blog's name
 			?>
 		</title>
-		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+		<?php
+			wp_head(); //defining head hook for plugins
+		?>
 	</head>
 	<body>
 		<div id="container">
