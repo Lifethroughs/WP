@@ -19,18 +19,27 @@
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 		<!-- Bootstrap CSS -->
-    	<link href="<?php bloginfo(template_url); ?>/assets/css/bootstrap.css" rel="stylesheet">
+    	<link href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.css" rel="stylesheet">
 
 		<!-- Head hook -->
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<div id="container">
-			<header>
-				<h1><?php bloginfo('name'); ?><br />
-					<span><?php bloginfo('description'); ?></span></h1>
-				<div id="search"><?php dynamic_sidebar('header-right'); ?></div>
-			</header>
-			<div style="clear:both;"></div>
-			<nav class="main"><?php wp_nav_menu(); ?></nav>
+		<div class="blog-masthead">
+			<div class="container">
+				<div class="blog-nav">
+					<?php
+					wp_nav_menu( array(
+					    'theme_location'	=> 'primary',
+					    'depth'				=> 1, // 1 = with dropdowns, 0 = no dropdowns.
+						'container'			=> 'div',
+						'container_class'	=> 'collapse navbar-collapse',
+						'container_id'		=> 'bs-example-navbar-collapse-1',
+						'menu_class'		=> 'navbar-nav mr-auto',
+					    'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
+					    'walker'			=> new WP_Bootstrap_Navwalker()
+					) );
+					?>
+				</div>
+			</div>
 		</div>
