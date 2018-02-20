@@ -3,7 +3,7 @@
 	<head>
 		<!-- Meta -->
 		<meta charset="<?php bloginfo('charset'); ?>">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="description" content="<?php bloginfo('description'); ?>">
 	    <meta name="author" content="Sami Suikki">
 
@@ -24,10 +24,10 @@
 		<!-- Head hook -->
 		<?php wp_head(); ?>
 	</head>
+
 	<body>
-		<div class="blog-masthead">
-			<div class="container">
-				<div class="blog-nav">
+		<div class="container-fluid">
+	   		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 					<?php
 					wp_nav_menu( array(
 					    'theme_location'	=> 'primary',
@@ -40,6 +40,5 @@
 					    'walker'			=> new WP_Bootstrap_Navwalker()
 					) );
 					?>
-				</div>
-			</div>
+			</nav>
 		</div>

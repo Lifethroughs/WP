@@ -9,7 +9,7 @@ function wpb_theme_setup() {
 
     // Register the menu structure
     register_nav_menus( array(
-    	'primary' => __('Primary Menu'),
+    	'primary' => __('Primary Menu', 'LifethroughsWPTheme'),
     ));
 }
 
