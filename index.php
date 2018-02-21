@@ -17,9 +17,11 @@
                         <?php the_author(); ?>
                         </a>
                     </p>
-                    <?php if(has_post_thumbnail()) : ?>
-                        <?php the_post_thumbnail(); ?>
-                    <?php endif ?>
+                    <div class="post-thumbnail">
+                        <?php if(has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail(); ?>
+                        <?php endif ?>
+                    </div>
                     <?php the_excerpt(); ?>
                 </div>
 

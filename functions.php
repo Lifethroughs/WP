@@ -1,5 +1,5 @@
 <?php
-// Register Custom Navigation Walker
+// Register Custom Navigation Walker Class
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 // Theme support
@@ -9,7 +9,7 @@ function wpb_theme_setup() {
 
     // Register the menu structure
     register_nav_menus( array(
-    	'primary' => __('Primary Menu', 'LifethroughsWPTheme'),
+    	'primary' => __('Primary Menu'),
     ));
 }
 

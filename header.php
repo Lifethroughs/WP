@@ -12,7 +12,7 @@
 
 		<title>
 			<?php bloginfo('name'); ?>
-			<?php is_front_page() ? bloginfo('description') : wp_title('|', true, left); ?>
+			<?php is_front_page() ? bloginfo('description') : wp_title('|', true, 'left'); ?>
 		</title>
 
 		<!-- CSS -->
@@ -26,7 +26,7 @@
 	</head>
 
 	<body>
-		<div class="container-fluid">
+		<div class="container">
 	   		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 					<?php
 					wp_nav_menu( array(
