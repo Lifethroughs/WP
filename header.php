@@ -17,7 +17,6 @@
 
 		<!-- CSS -->
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 		<!-- Bootstrap CSS -->
     	<link href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.css" rel="stylesheet">
 
@@ -38,7 +37,13 @@
 						'menu_class'		=> 'navbar-nav mr-auto',
 					    'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
 					    'walker'			=> new WP_Bootstrap_Navwalker()
-					) );
+					));
 					?>
 			</nav>
 		</div>
+
+		<div class="container">
+      		<div class="blog-header">
+        		<h1 class="blog-title"><?php bloginfo('name'); ?></h1>
+        		<p class="lead blog-description"><?php bloginfo('description'); ?></p>
+			</div>
