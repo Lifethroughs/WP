@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html <?php language_attributes(); ?>>
 	<head>
 		<!-- Meta -->
@@ -19,6 +19,11 @@
 		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 		<!-- Bootstrap CSS -->
     	<link href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.css" rel="stylesheet">
+
+		<!-- HTML5 element support for IE8 and earlier -->
+		<!--[if lt IE 9]>
+  			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
 
 		<!-- Head hook -->
 		<?php wp_head(); ?>
