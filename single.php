@@ -1,6 +1,10 @@
 <?php get_header(); ?>
 
     <main class="container">
+        <nav class="blog-pagination">
+            <a class="btn btn-outline-primary" href="http://localhost:8888/lifethroughs/">Back to all posts</a>
+        </nav>
+
         <div class="row">
             <article class="col-md-8 blog-main">
                 <?php if (have_posts()) : ?>

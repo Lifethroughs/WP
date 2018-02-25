@@ -2,7 +2,7 @@
 
     <main class="container">
         <div class="row">
-            <article class="col-md-8 blog-main">
+            <section class="col-md-8 blog-main">
                 <?php if (have_posts()) : ?>
                     <?php while(have_posts()) : the_post(); ?>
                         <?php get_template_part('content'); ?>
@@ -13,10 +13,10 @@
 
                 <nav class="blog-pagination">
                     <a class="btn btn-outline-primary" href="#">Older</a>
-                    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+                    <a class="btn btn-outline-secondary" href="#">Newer</a>
                 </nav>
 
-            </article> <!-- /.blog-main -->
+            </section> <!-- /.blog-main -->
 
 
     <aside class="col-md-4 blog-sidebar">
