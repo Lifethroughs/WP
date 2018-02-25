@@ -49,8 +49,12 @@
 		</div>
 
 		<div class="container">
-			<header class="blog-header">
-        		<h1 class="blog-header-logo"><?php bloginfo('name'); ?></h1>
-        		<p class="lead blog-description"><?php bloginfo('description'); ?></p>
-			</header> <!-- /.blog-header-->
+		    <header class="blog-header">
+		        <?php if (is_single()) : ?>
+		            <h1 class="blog-header-logo"><?php bloginfo('name'); ?></h1>
+		        <?php else : ?>
+		            <h1 class="blog-header-logo"><?php bloginfo('name'); ?></h1>
+		            <p class="lead blog-description"><?php bloginfo('description'); ?></p>
+		        <?php endif; ?>
+		    </header> <!-- /.blog-header-->
 		</div> <!-- /.container -->
