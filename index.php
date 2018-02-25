@@ -32,7 +32,14 @@
                 <?php else : ?>
                     <p><?php __('No Posts Found'); ?></p>
                 <?php endif; ?>
+
+                <nav class="blog-pagination">
+                    <a class="btn btn-outline-primary" href="#">Older</a>
+                    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+                </nav>
+                
             </article> <!-- /.blog-main -->
+
 
     <aside class="col-md-4 blog-sidebar">
         <?php if(is_active_sidebar('sidebar')) : ?>

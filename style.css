@@ -17,7 +17,7 @@ Text Domain: lifethroughs
 }
 
 .blog-header-logo {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.25rem;
 }
 
@@ -26,7 +26,7 @@ Text Domain: lifethroughs
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .display-4 {
@@ -138,6 +138,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 4rem;
 }
 
+p {
+    font-family: 'Roboto', arial, sans-serif;
+}
+
 .blog-post-title {
     margin-bottom: .25rem;
     font-size: 2.5rem;
@@ -146,6 +150,11 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-meta {
     margin-bottom: 1.25rem;
     color: #999;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
 }
 
 /*
@@ -162,9 +171,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-footer p:last-child {
     margin-bottom: 0;
-}
-
-.post-thumbnail img {
-    width: 100%;
-    height: auto;
 }
