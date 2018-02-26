@@ -1,4 +1,16 @@
 <?php
+
+// Load the styles, scripts and fonts with correct enqueue way
+function load_styles_scripts_fonts(){
+    wp_enqueue_style( 'styles', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style( 'bootstrapCSS', get_template_directory_uri() . '/assets/css/bootstrap.css');
+    wp_enqueue_style( 'google-roboto-font', 'https://fonts.googleapis.com/css?family=Roboto');
+
+    wp_enqueue_script( 'bootstrapJS', get_template_directory_uri() . '/assets/js/bootstrap.js', array(), null, true );
+}
+
+add_action('wp_enqueue_scripts', 'load_styles_scripts_fonts');
+
 // Register Custom Navigation Walker Class
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 

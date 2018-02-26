@@ -8,6 +8,5 @@
         <!-- Footer hook -->
         <?php wp_footer(); ?>
 
-        <script src="<?php bloginfo('template_url'); ?>/assets/js/bootstrap.js"></script>
     </body>
 </html>

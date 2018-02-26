@@ -15,12 +15,6 @@
 			<?php is_front_page() ? bloginfo('description') : wp_title('|', true, 'left'); ?>
 		</title>
 
-		<!-- Custom CSS -->
-		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
-		<!-- Bootstrap CSS -->
-    	<link href="<?php bloginfo('template_url'); ?>/assets/css/bootstrap.css" rel="stylesheet">
-		<!-- Font import -->
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<!-- HTML5 element support for IE8 and earlier -->
 		<!--[if lt IE 9]>
   			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -49,12 +43,12 @@
 		</div>
 
 		<div class="container">
-		    <header class="blog-header">
+			<header class="blog-header">
 		        <?php if (is_single()) : ?>
 		            <h1 class="blog-header-logo"><?php bloginfo('name'); ?></h1>
 		        <?php else : ?>
 		            <h1 class="blog-header-logo"><?php bloginfo('name'); ?></h1>
-		            <p class="lead blog-description"><?php bloginfo('description'); ?></p>
+					<p class="lead blog-description"><?php bloginfo('description'); ?></p>
 		        <?php endif; ?>
 		    </header> <!-- /.blog-header-->
 		</div> <!-- /.container -->

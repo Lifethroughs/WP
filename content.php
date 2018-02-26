@@ -11,7 +11,7 @@
             </h2>
 
             <time class="blog-post-meta">
-                <p>
+                <p> Published
                     <?php the_time('Y-M-d'); ?>
                     by
                     <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
