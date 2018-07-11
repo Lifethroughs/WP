@@ -12,7 +12,7 @@
 
     <time class="blog-post-meta">
         <p> Published
-            <?php the_time('Y-M-d'); ?>
+            <?php the_time('Y, M d'); ?>
             by
             <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
                 <?php the_author(); ?>
